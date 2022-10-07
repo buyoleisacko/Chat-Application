@@ -7,6 +7,7 @@
     tools:context=".LogIn">
 
     <ImageView
+        android:id="@+id/app_logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
@@ -15,5 +16,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/app_logo"
+        android:layout_marginTop="10dp"
+        android:hint="@string/email"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
